@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find hal_inclinometer)/launch/hal_inclinometer.launch" />
+    <include file="$(find hal_agribot_control)/launch/hal_agribot_control.launch" />
+    <include file="$(find hal_hydrabox)/launch/hal_hydrabox.launch" />
+</launch>

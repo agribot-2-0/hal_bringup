@@ -8,7 +8,7 @@ project(hal_bringup)
 ## Find catkin packages and libraries for catkin and system dependencies   ##
 #############################################################################
 find_package(catkin REQUIRED COMPONENTS
-  hal_agribot_control
-  hal_hydrabox
-  hal_inclinometer
+  # hal_agribot_control
+  # hal_hydrabox
+  # hal_inclinometer
 )

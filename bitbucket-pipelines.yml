@@ -8,13 +8,7 @@ pipelines:
          script:
            - apk add --update bash coreutils tar
            - git clone --quiet --depth 1 https://github.com/ros-industrial/industrial_ci .industrial_ci -b master
-           - git clone https://github.com/panpawelchmiel/hal_agribot_control.git
-           - git clone https://github.com/panpawelchmiel/hal_hydrabox.git
-           - git clone https://github.com/panpawelchmiel/hal_inclinometer.git
-           - git clone https://github.com/panpawelchmiel/hal_manual_control.git
-           - git clone https://github.com/panpawelchmiel/agribot_msgs.git
-           - git clone https://github.com/panpawelchmiel/agribot_common.git
-           - .industrial_ci/bitbucket.sh ROS_DISTRO=melodic UPSTREAM_WORKSPACE="hal_agribot_control hal_hydrabox hal_inclinometer hal_manual_control agribot_msgs agribot_common"
+           - .industrial_ci/bitbucket.sh ROS_DISTRO=melodic
 
 definitions:
   services:

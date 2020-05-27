@@ -12,3 +12,18 @@ find_package(catkin REQUIRED COMPONENTS
   # hal_hydrabox
   # hal_inclinometer
 )
+
+catkin_package()
+
+###########
+## Build ##
+###########
+
+#############
+## Install ##
+#############
+
+install(DIRECTORY launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  PATTERN ".svn" EXCLUDE
+)

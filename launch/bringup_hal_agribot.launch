@@ -4,4 +4,5 @@
     <include file="$(find hal_agribot_control)/launch/hal_agribot_control.launch" />
     <include file="$(find hal_hydrabox)/launch/hal_hydrabox.launch" />
     <include file="$(find hal_mobile_app)/launch/hal_mobile_app.launch" />
+    <include file="$(find hal_sonars)/launch/hal_sonars.launch" />
 </launch>

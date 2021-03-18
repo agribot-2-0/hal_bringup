@@ -5,8 +5,7 @@
     <include file="$(find hal_hydraulics_monitoring)/launch/hal_hydraulics_monitoring.launch" />
     <include file="$(find hal_inclinometer)/launch/hal_inclinometer.launch" />
     <include file="$(find hal_io_card)/launch/hal_io_card.launch" />
-    <!-- TODO uncomment when lidar connected -->
-    <!-- <include file="$(find hal_lidar)/launch/hal_lidar.launch" /> -->
+    <include if="$(env AGRIBOT_PERCEPTION_SENSORS)" file="$(find hal_lidar)/launch/hal_lidar.launch" />
     <include file="$(find hal_mobile_app)/launch/hal_mobile_app.launch" />
     <include file="$(find hal_rfid)/launch/hal_rfid.launch" />
     <include file="$(find hal_video_stream)/launch/hal_video_stream.launch" />

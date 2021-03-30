@@ -10,4 +10,5 @@
     <include file="$(find hal_rfid)/launch/hal_rfid.launch" />
     <include file="$(find hal_video_stream)/launch/hal_video_stream.launch" />
     <include file="$(find hal_weather_station)/launch/hal_weather_station.launch" />
+    <include file="$(find hal_tool)/launch/hal_tool.launch" />
 </launch>

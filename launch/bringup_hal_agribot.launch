@@ -1,7 +1,8 @@
 <launch>
     <include file="$(find hal_agribot_control)/launch/hal_agribot_control.launch" />
     <include file="$(find hal_engine_monitoring)/launch/hal_engine_monitoring.launch" />
-    <include file="$(find hal_hydrabox)/launch/hal_hydrabox.launch" />
+    <include file="$(find hal_hydrabox)/launch/hal_hydrabox_dual.launch" />
+    <include file="$(find hal_bynav)/launch/hal_bynav.launch" />
     <include file="$(find hal_hydraulics_monitoring)/launch/hal_hydraulics_monitoring.launch" />
     <include file="$(find hal_inclinometer)/launch/hal_inclinometer.launch" />
     <include file="$(find hal_io_card)/launch/hal_io_card.launch" />

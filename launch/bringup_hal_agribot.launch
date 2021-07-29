@@ -7,6 +7,7 @@
     <include file="$(find hal_inclinometer)/launch/hal_inclinometer.launch" />
     <include file="$(find hal_io_card)/launch/hal_io_card.launch" />
     <include if="$(env AGRIBOT_PERCEPTION_SENSORS)" file="$(find hal_lidar)/launch/hal_lidar.launch" />
+    <include if="$(env AGRIBOT_PERCEPTION_SENSORS)" file="$(find hal_zed2)/launch/zed2.launch" />
     <include file="$(find hal_lights)/launch/hal_lights.launch" />
     <include file="$(find hal_mobile_app)/launch/hal_mobile_app.launch" />
     <include file="$(find hal_rfid)/launch/hal_rfid.launch" />
